@@ -1,7 +1,7 @@
 ﻿
 namespace DesktopApp
 {
-    partial class Form1
+    partial class RegisterPage
     {
         /// <summary>
         ///  Required designer variable.
@@ -61,7 +61,7 @@ namespace DesktopApp
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // RegisterPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -69,8 +69,8 @@ namespace DesktopApp
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label2);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "RegisterPage";
+            this.Text = "صفحه ثبت نام";
             this.ResumeLayout(false);
             this.PerformLayout();
 

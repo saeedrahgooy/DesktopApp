@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace DesktopApp
 {
-    public partial class Form1 : Form
+    public partial class RegisterPage : Form
     {
         public delegate void SendNotification(Message message);
         private readonly IList<INotification> _notification;
         private readonly IList<IProvider> _provider;
 
-        public Form1()
+        public RegisterPage()
         {
             InitializeComponent();
             _notification = new List<INotification>();
@@ -65,8 +65,8 @@ namespace DesktopApp
             //SendNotification sendNotification = smsNotification.Send;
             sendNotification(message);
 
-
-
+            this.Close();
+            
         }
 
         private void txtEmail_KeyDown(object sender, KeyEventArgs e)
