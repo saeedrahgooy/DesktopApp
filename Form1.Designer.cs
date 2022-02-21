@@ -71,6 +71,7 @@ namespace DesktopApp
             this.Controls.Add(this.label2);
             this.Name = "RegisterPage";
             this.Text = "صفحه ثبت نام";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RegisterPage_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -91,5 +91,10 @@ namespace DesktopApp
 
             }
         }
+
+        private void RegisterPage_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
