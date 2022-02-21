@@ -21,7 +21,9 @@ namespace DesktopApp
         private void MainPage_Load(object sender, EventArgs e)
         {
             this.Hide();
-            RegisterPage registerPage = new RegisterPage();
+            INotification notification = new EmailNotification();
+            IProvider provider = new EFProvider();
+            RegisterPage registerPage = new RegisterPage(notification,provider);
             registerPage.ShowDialog();
         }
     }
